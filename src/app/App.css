@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  color: rgb(235, 235, 235);
+  background-color: rgb(25, 25, 25);
+  font-family: 'Raleway', 'Arial';
+}
+
+div.app {
+  margin: 30vh 0 0 50px;
+}
+
+h1.title {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+h2.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+}
