@@ -12,6 +12,7 @@ STATUS: In progress
   - [Testing](#testing)
 - [Recommended Patterns](#recommended-patterns)
   - [Directory Structure](#directory-structure)
+  - [Presentational and Container Components](#presentational-and-container-components)
   - [File Naming](#file-naming)
 - [Tips](#tips)
   - [Integration w/ React Router](#integration-w-react-router)
