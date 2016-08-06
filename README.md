@@ -179,7 +179,7 @@ export default connect(
 Remember, *components don't have to emit DOM.* Separate those concerns! :smile:
 
 ###File Naming
-I recommend using the following conventions:
+I recommend using the following suffixes:
 
 File Nature | Description | Example
 --- | --- | ---
@@ -192,12 +192,28 @@ Spec | `*.spec.js` |`counterActions.spec.js`, `counterReducer.spec.js`, `Counter
 
 ##Tips
 ###Integration w/ [React Router](https://github.com/reactjs/react-router)
+If you're using [react-router-redux](https://github.com/reactjs/react-router-redux) in addition to redux-immutable, you'll need to use a [custom reducer](https://github.com/gajus/redux-immutable#using-with-react-router-redux) to replace `routeReducer` for the router portion of the state, as well as a [selector to access and convert payload state to a JS object](https://github.com/gajus/redux-immutable#using-with-react-router-redux) on `syncHistoryWithStore`.
 
 ###PureRenderMixin
+**Avoiding using PureRenderMixin where isn't necessary.** While it's tempting to apply the optimization to every component, still value the terseness of stateless functional components.
 
 ###Testing Immutable.js state
-
-###Server-side rendering
+When testing your reducers and comparing state, Chai's `expect(/* Reducer invocation */).to.equal(/* Immutable.js instance */)` will not work. Instead use [Immutable.is](https://facebook.github.io/immutable-js/docs/#/is) to compare Immutable state:
+```js
+expect(Immutable.is(
+  todosReducer(List([]), {
+    type: ADD_TODO,
+    text: 'Buy milk'
+  }),
+  List([
+    Map({
+      id: 0,
+      text: 'Buy milk',
+      complete: false
+    })
+  ])
+)).to.be.true;
+```
 
 ##License
 [MIT](https://github.com/jackrzhang/react-redux-immutable-boilerplate/blob/master/LICENSE)
