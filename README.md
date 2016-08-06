@@ -1,6 +1,8 @@
 # react-redux-immutable-boilerplate
 STATUS: In progress
 
+##Table of Contents
+
 ##Features
 * [React](https://facebook.github.io/react/)
 * [Redux](http://redux.js.org/), for simple and scalable state management
@@ -61,9 +63,21 @@ npm run test:views
 ```
 See recommended [file naming conventions]().
 
-##Recommended Conventions
+##Recommended Patterns
+###Directory Structure
+
+###Presentational and Container Components
+
+###File Naming
 
 ##Tips
+###Integration w/ [React Router](https://github.com/reactjs/react-router)
+
+###PureRenderMixin
+
+###Testing Immutable.js state
+
+###Server-side rendering
 
 ##License
 [MIT](https://github.com/jackrzhang/react-redux-immutable-boilerplate/blob/master/LICENSE)
