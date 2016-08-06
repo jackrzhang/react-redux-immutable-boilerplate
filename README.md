@@ -2,6 +2,23 @@
 STATUS: In progress
 
 ##Table of Contents
+- [Features](#features)
+- [Requirements](#requirements)
+- [Usage](#usage)
+  - [Installation](#installation)
+  - [Development](#development)
+  - [Production](#production)
+  - [Linting](#linting)
+  - [Testing](#testing)
+- [Recommended Patterns](#recommended-patterns)
+  - [Directory Structure](#directory-structure)
+  - [File Naming](#file-naming)
+- [Tips](#tips)
+  - [Integration w/ React Router](#integration-w-react-router)
+  - [PureRenderMixin](#purerendermixin)
+  - [Testing Immutable.js state](#testing-immutablejs-state)
+  - [Server-side Rendering](#server-side-rendering)
+- [License](#license)
 
 ##Features
 * [React](https://facebook.github.io/react/)
