@@ -1,5 +1,9 @@
 # react-redux-immutable-boilerplate
-STATUS: In progress
+[![Build Status](https://travis-ci.org/jackrzhang/react-redux-immutable-boilerplate.svg?branch=master)](https://travis-ci.org/jackrzhang/react-redux-immutable-boilerplate)
+[![dependencies Status](https://david-dm.org/jackrzhang/react-redux-immutable-boilerplate/status.svg)](https://david-dm.org/jackrzhang/react-redux-immutable-boilerplate)
+[![devDependencies Status](https://david-dm.org/jackrzhang/react-redux-immutable-boilerplate/dev-status.svg)](https://david-dm.org/jackrzhang/react-redux-immutable-boilerplate?type=dev)
+
+Kickstart a production-grade, **scalable**, and **peformant** JS front-end, using the combination of React, Redux, and Immutable.js. This was built as an extension of [react-webpack-boilerplate](https://github.com/jackrzhang/react-webpack-boilerplate). You can find an example of this starter kit in action [here](https://github.com/jackrzhang/todos-immutablejs).
 
 ##Table of Contents
 - [Features](#features)
@@ -18,7 +22,6 @@ STATUS: In progress
   - [Integration w/ React Router](#integration-w-react-router)
   - [PureRenderMixin](#purerendermixin)
   - [Testing Immutable.js state](#testing-immutablejs-state)
-  - [Server-side Rendering](#server-side-rendering)
 - [License](#license)
 
 ##Features
