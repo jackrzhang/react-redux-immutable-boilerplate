@@ -22,3 +22,48 @@ STATUS: In progress
 ##Requirements
 [Node.js](https://nodejs.org) v6+
 
+##Usage
+###Installation
+```sh
+git clone https://github.com/jackrzhang/react-redux-immutable-boilerplate.git
+cd react-redux-immutable-boilerplate
+rm -rf .git
+git init
+npm install
+```
+
+###Development
+Just run `npm run dev`, which is equivalent to:
+```sh
+npm run clean
+npm start
+open http://localhost:8080
+```
+
+###Production
+`npm run prod`, which is equivalent to:
+```sh
+npm run build
+open build/index.html
+```
+
+###Linting
+```sh
+npm run lint
+```
+
+###Testing
+Use `npm test`, as per usual. Unit tests are separated by file nature, as follows:
+```sh
+npm run test:reducers
+npm run test:actions
+npm run test:views
+```
+See recommended [file naming conventions]().
+
+##Recommended Conventions
+
+##Tips
+
+##License
+[MIT](https://github.com/jackrzhang/react-redux-immutable-boilerplate/blob/master/LICENSE)
