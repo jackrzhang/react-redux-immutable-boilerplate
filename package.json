@@ -14,7 +14,8 @@
     "lint": "./node_modules/.bin/eslint webpack src || true",
     "test": "./node_modules/.bin/mocha --reporter spec .specsetup.js src/**/*.spec.js",
     "test:actions": "./node_modules/.bin/mocha --reporter spec .specsetup.js src/**/*Actions.spec.js",
-    "test:reducers": "./node_modules/.bin/mocha --reporter spec .specsetup.js src/**/*Reducer.spec.js"
+    "test:reducers": "./node_modules/.bin/mocha --reporter spec .specsetup.js src/**/*Reducer.spec.js",
+    "test:views": "./node_modules/.bin/mocha --reporter spec .specsetup.js src/**/*.view.spec.js"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
