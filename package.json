@@ -11,7 +11,7 @@
     "build": "NODE_ENV=production webpack --config webpack/config.prod.js",
     "prod": "npm run build && open build/index.html",
     "dev": "npm run clean; open http://localhost:8080 && npm start",
-    "lint": "./node_modules/.bin/eslint webpack src || true",
+    "lint": "./node_modules/.bin/eslint webpack src",
     "test": "./node_modules/.bin/mocha --reporter spec .specsetup.js src/**/*.spec.js",
     "test:actions": "./node_modules/.bin/mocha --reporter spec .specsetup.js src/**/*Actions.spec.js",
     "test:reducers": "./node_modules/.bin/mocha --reporter spec .specsetup.js src/**/*Reducer.spec.js",

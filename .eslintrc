@@ -11,6 +11,10 @@
     "spread": true
   },
   "rules": {
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": 0,
+    "import/imports-first": 0,
+    "import/newline-after-import": 0,
     "new-cap": 0, // Immutable.js constructors
     "no-confusing-arrow": 0,
     "no-console": 0,
