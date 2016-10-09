@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import rootReducer from './state/rootReducer.js';
+import rootReducer from './state/rootReducer';
 
 import { persistState } from 'redux-devtools';
 import DevTools from './DevTools';
@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === 'development') {
   enhancer = applyMiddleware();
 }
 
-const configureStore = initialState => {
+const configureStore = (initialState) => {
   const store = createStore(
     rootReducer,
     initialState,
